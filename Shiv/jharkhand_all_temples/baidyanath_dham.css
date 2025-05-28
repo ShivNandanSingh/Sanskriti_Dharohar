@@ -1,0 +1,83 @@
+/* style.css */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+header {
+  background-color: #4a148c;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.image-section {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.temple-image {
+  width: 90%;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.monument-info {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.left-column, .center-column, .right-column {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.left-column ul, .right-column ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.left-column ul li, .right-column ul li {
+  margin-bottom: 10px;
+}
+
+a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #4a148c;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 30px;
+}
+
+@media (max-width: 900px) {
+  .monument-info {
+    grid-template-columns: 1fr;
+  }
+
+  .left-column, .center-column, .right-column {
+    margin-bottom: 20px;
+  }
+}
