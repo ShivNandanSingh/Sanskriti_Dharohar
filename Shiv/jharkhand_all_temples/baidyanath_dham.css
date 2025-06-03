@@ -40,7 +40,7 @@ body {
 }
 
 .dropdown {
-  position: relative;
+  position: relative; 
 }
 
 .dropbtn {
@@ -179,21 +179,34 @@ body {
 .info-column.left,
 .info-column.right {
   flex: 1;
+  line-height: 1.6;
 }
 .info-column.center {
   flex: 2;
+  line-height: 1.6;
 }
 
-details {
+.map, details {
   margin-bottom: 15px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  padding: 10px;
-  background-color: #f2ffc9;
+  padding: 20px;
+  /* background-color: #f2ffc9; */
 }
 
 summary {
   cursor: pointer;
   font-weight: bold;
   font-size: 1rem;
+}
+
+footer {
+  background-color: #6a1b9a;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 30px;
 }
